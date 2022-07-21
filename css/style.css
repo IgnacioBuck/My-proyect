@@ -1,0 +1,304 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/fondositioweb.jpg);
+    background-size: cover;
+    font-family: 'Roboto Mono', monospace;
+}
+.container{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.5fr;
+    grid-template-areas:
+    "titulo titulo titulo titulo"
+    "inicio cuerpo cuerpo cuerpo"
+    "pie pie pie pie"
+    ;
+}
+header{
+    color: #FAF3E3;
+    background-color: #000000;
+    padding: 30px;
+    position: sticky;
+    z-index: 1;
+    grid-area: inicio;
+}
+.logotipo{
+    display: flex;
+    justify-content: center;
+}
+.inicio{
+    padding: 5px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+}
+nav ul{
+    list-style: none;
+    
+}
+li{
+    list-style: none;
+    font-size: 25px;
+    
+}
+li a{
+    text-decoration: none;
+    list-style: none;
+    color: #FAF3E3;
+}
+.menu{
+    color: #FAF3E3;
+    padding: 10px;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 100px 100px 100px;
+    background-color: #990000;
+    border: 4px solid #FAF3E3;
+}
+
+.titulo{
+    color: #FAF3E3;
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+    background-image: url(../img/fondonba.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #FAF3E3;
+    font-family: 'Anton', sans-serif;
+    grid-area: titulo;
+}
+section{
+    background-color: #000000;
+    padding: 5px;
+    border: 5px solid white;
+    margin: 2%;
+}
+.cuerpo{
+    grid-area: cuerpo;
+}
+p{
+    color: #FAF3E3;
+    margin: 10px;
+    font-size: 15px;
+}
+span{
+    color: #FAF3E3;
+    margin: 5px;
+}
+.textopri{
+    font-size: 28px;
+    text-align: center;
+    padding: 10px;
+    background-color:   #990000;
+    border: 10px solid white;
+}
+footer{
+    color: #FAF3E3;
+    background-color: #000000;
+    font-size: 25px;
+    text-decoration: none;
+    grid-area: pie;
+}
+.pietexto{
+    font-size: 25px;
+    color: #FAF3E3;
+    background-color: #990000;
+    padding: 20px;
+    border: 5px solid #FAF3E3;
+}
+.pie{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.icon{
+    display: grid;
+    justify-content: center;
+}
+.menufooter{
+    display: grid;
+    justify-content: center;
+}
+.camisetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.nombreyprecio{
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.boton{
+    padding: 3px; 
+    background-color: #125B50; 
+    color: #ffffff; 
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 5px;
+}
+.vertodo{
+    color: white;
+    background-color: #125B50;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin: 5px 40px 5px 40px;
+}
+.selec{
+
+    padding: 50px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 100px;
+    font-weight: 200;
+    font-weight: bold;
+
+}
+.categoryselec{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    border: 5px solid #FAF3E3;
+    background-color: #990000;
+    padding: 10px;
+}
+.categoryselec:hover{
+    transform: scale(1.5);
+    transition: all 2s;
+}
+.nosotros{
+    color: #FAF3E3;
+    padding: 100px;
+    background-color: #000000;
+    border: 5px solid #ffffff;
+    text-align: center;
+    font-size: 20px;
+}
+.enviarinfo{
+    font-size: 17px;
+}
+textarea{
+    resize: none;
+    max-height: 20px;
+    max-width: 220px;
+}
+.contacto{
+    color: #FAF3E3;
+    padding: 150px;
+    background-color: #000000;
+    border: 5px solid #ffffff;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+@media(max-width:992px){
+    .container{
+        grid-template-areas: 
+        "inicio inicio inicio"
+        "titulo titulo titulo"
+        "cuerpo cuerpo cuerpo"
+        "pie pie pie";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .inicio{
+        font-size: 20px;
+    }
+    .pie{
+        display: flex;
+        flex-direction: column;
+    }
+    .pietexto{
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        color: #FAF3E3;
+        background-color: #990000;
+        padding: 10px;
+        border: 10px solid #FAF3E3;
+        text-align: center;
+    }
+    .camisetas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .selec{
+        display: flex;
+        flex-direction: column;
+    }
+    .categoryselec{
+        margin: 10px;
+    }
+    .categoryselec:hover{
+        transform: scale(1.2);
+        transition: all 2s;
+    }
+    .nombreyprecio{
+        font-size: 13px;
+    }
+    span{
+        margin: 3px;
+    }
+
+}
+@media(max-width:768px) {
+    .container{
+        grid-template-areas: 
+        "inicio inicio inicio"
+        "titulo titulo titulo"
+        "cuerpo cuerpo cuerpo"
+        "pie pie pie";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .camisetas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width:576px){
+    .container{
+        grid-template-areas: 
+        "inicio"
+        "titulo"
+        "cuerpo"
+        "pie";
+        grid-template-columns: 1fr;
+    }
+    .camisetas{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .titulo{
+        font-size: 10px;
+    }
+    .boton{
+        padding: auto;
+        font-size: px;
+    }
+}
