@@ -10,12 +10,13 @@ body{
 }
 .container{
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 0.5fr;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr;
     grid-template-areas:
-    "titulo titulo titulo titulo"
-    "inicio cuerpo cuerpo cuerpo"
-    "pie pie pie pie"
+    "inicio inicio inicio"
+    "titulo titulo titulo"
+    "cuerpo cuerpo cuerpo"
+    "pie pie pie"
     ;
 }
 header{
@@ -59,7 +60,6 @@ li a{
     justify-items: center;
     grid-template-rows: 100px 100px 100px;
     background-color: #990000;
-    border: 4px solid #FAF3E3;
 }
 
 .titulo{
@@ -70,14 +70,12 @@ li a{
     background-image: url(../img/fondonba.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    border: 5px solid #FAF3E3;
     font-family: 'Anton', sans-serif;
     grid-area: titulo;
 }
 section{
     background-color: #000000;
     padding: 5px;
-    border: 5px solid white;
     margin: 2%;
 }
 .cuerpo{
