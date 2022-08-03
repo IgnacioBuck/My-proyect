@@ -8,7 +8,7 @@ body{
     background-size: cover;
     font-family: 'Roboto Mono', monospace;
 }
-.container{
+.contenedor{
     display: grid;
     grid-template-columns:1fr;
     grid-template-rows: 1fr;
@@ -18,6 +18,13 @@ body{
     "cuerpo cuerpo cuerpo"
     "pie pie pie"
     ;
+}
+.row{
+    display: flex;
+    justify-content: flex-start;
+}
+h3{
+    color: #FAF3E3;
 }
 header{
     color: #FAF3E3;
@@ -186,7 +193,7 @@ footer{
 }
 .nosotros{
     color: #FAF3E3;
-    padding: 100px;
+    padding: 130px;
     background-color: #000000;
     border: 5px solid #ffffff;
     text-align: center;
@@ -202,7 +209,7 @@ textarea{
 }
 .contacto{
     color: #FAF3E3;
-    padding: 150px;
+    padding: 200px;
     background-color: #000000;
     border: 5px solid #ffffff;
     text-align: center;
@@ -211,7 +218,7 @@ textarea{
 
 
 @media(max-width:992px){
-    .container{
+    .contenedor{
         grid-template-areas: 
         "inicio inicio inicio"
         "titulo titulo titulo"
@@ -266,7 +273,7 @@ textarea{
 
 }
 @media(max-width:768px) {
-    .container{
+    .contenedor{
         grid-template-areas: 
         "inicio inicio inicio"
         "titulo titulo titulo"
@@ -280,7 +287,7 @@ textarea{
     }
 }
 @media(max-width:576px){
-    .container{
+    .contenedor{
         grid-template-areas: 
         "inicio"
         "titulo"
