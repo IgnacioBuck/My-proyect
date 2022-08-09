@@ -13,177 +13,29 @@ body{
     "pie pie pie"
     ;
 }
-ul{
-    list-style: none;
-    li{
-        font-size: 25px;
-        a{
-            
-            text-decoration: none;
-            color: $fuente-principal;
-        }
-    }
-}
+
 .categoryselec:hover{
     transform: scale(1.5);
     transition: all 2s;
 }
-.selec{
 
-    padding: 50px;
-    margin: 5px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    .categoryselec{
-        position: relative;
-        display: inline-block;
-        text-align: center;
-        border: 5px solid #FAF3E3;
-        background-color: $color-fondo;
-        padding: 10px;
-        .text{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color:white;
-            font-size: 100px;
-            font-weight: 200;
-            font-weight: bold;
-        
-        }
-    }
-}
 span{
     color: #FAF3E3;
     margin: 5px;
 }
-header{
-    color: #ffffff;
-    background-color: #000000;
-    padding: 30px;
-    position: sticky;
-    z-index: 1;
-    grid-area: inicio;
-    .logotipo{
-        display: flex;
-        justify-content: center;
-    }
-}
-.titulo{
-    color: #ffffff;
-    text-align: center;
-    padding: 40px;
-    font-size: 20px;
-    background-image: url(../img/fondonba.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Anton', sans-serif;
-    grid-area: titulo;
-}
-.cuerpo{
-    grid-area: cuerpo;
-    }
-    .contacto{
-        color: $fuente-principal;
-        padding: 200px;
-        background-color: #000000;
-        border: 5px solid #ffffff;
-        text-align: center;
-        font-size: 20px;
-        textarea{
-            resize: none;
-            max-height: 20px;
-            max-width: 220px;
-        }
-        .enviarinfo{
-            font-size: 17px;
-        }
-    }
-    section{
-        background-color: #000000;
-        padding: 5px;
-        margin: 2%;
-    }
-    h3{
-        color: #ffffff;
-    }
-    .textopri{
-        font-size: 28px;
-        text-align: center;
-        padding: 10px;
-        background-color: $color-fondo;
-        border: 10px solid white;
-    }
-.vertodo{
-    color: $fuente-principal;
-    background-color: #125B50;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #000000;
-    border-radius: 10px;
-    margin: 5px 40px 5px 40px;
-}
+@import ".layout/productos";
+@import ".layout/mainnosotros";
+@import ".layout/maincontacto";
+@import "./layout/header";
+@import"./layout/reset";
+@import "./layout/main";
+@import "./utilities/mixins";
+
 p{
     color: #FAF3E3;
     margin: 10px;
     font-size: 15px;
 }
-.nosotros{
-    color: #FAF3E3;
-    padding: 130px;
-    background-color: #000000;
-    border: 5px solid #ffffff;
-    text-align: center;
-    font-size: 20px;
-}
+@import "./layout/footer"
 
-.row{
-    display: flex;
-    justify-content: flex-start;
-    .nombreyprecio{
-        font-size: 15px;
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        .boton{
-            padding: 3px; 
-            background-color: #125B50; 
-            color: #ffffff; 
-            text-decoration: none;
-            border-radius: 10px;
-            margin: 5px;
-        }
-    }
-    
-}
-footer{
-    color: #FAF3E3;
-    background-color: #000000;
-    font-size: 25px;
-    text-decoration: none;
-    grid-area: pie;
-    .pietexto{
-        font-size: 25px;
-        color: #FAF3E3;
-        background-color: $color-fondo;
-        padding: 20px;
-        border: 5px solid #FAF3E3;
-    }
-    .pie{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-items: center;
-    }
-    .icon{
-        display: grid;
-        justify-content: center;
-    }
-    .menufooter{
-        display: grid;
-        justify-content: center;
-    }
-}
+

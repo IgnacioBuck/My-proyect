@@ -6,7 +6,10 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "inicio inicio inicio" "titulo titulo titulo" "cuerpo cuerpo cuerpo" "pie pie pie"; }
+  grid-template-areas: "inicio inicio inicio"
+ "titulo titulo titulo"
+ "cuerpo cuerpo cuerpo"
+ "pie pie pie"; }
 
 ul {
   list-style: none; }
@@ -36,14 +39,15 @@ ul {
     background-color: #990000;
     padding: 10px; }
     .selec .categoryselec .text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      font-size: 100px;
-      font-weight: 200;
-      font-weight: bold; }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 100px;
+    font-weight: 200;
+    font-weight: bold;
+  }
 
 span {
   color: #FAF3E3;
