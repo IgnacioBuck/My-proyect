@@ -1,30 +1,104 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
 body {
   background-image: url(../img/fondositioweb.jpg);
-  background-size: cover;
-}
-.contenedor {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "inicio inicio inicio"
- "titulo titulo titulo"
- "cuerpo cuerpo cuerpo"
- "pie pie pie"; 
-}
+  background-size: cover; }
+  body p {
+    color: white;
+    margin: 10px;
+    font-size: 15px; }
+  body span {
+    color: white;
+    margin: 5px; }
+  body a {
+    text-decoration: none;
+    color: white; }
 
-ul {
-  list-style: none; }
-  ul li {
-    font-size: 25px; }
-    ul li a {
-      text-decoration: none;
-      color: #FAF3E3;
-    }
+header {
+  color: white;
+  background-color: #000000;
+  padding: 30px;
+  grid-area: inicio; }
+  header .logotipo {
+    display: flex;
+    justify-content: center; }
+  header ul {
+    list-style: none; }
+    header ul li {
+      font-size: 25px; }
 
+.cuerpo {
+  grid-area: cuerpo; }
+  .cuerpo section {
+    background-color: #000000;
+    padding: 5px;
+    margin: 2%; }
+  .cuerpo h3 {
+    color: white; }
+  .cuerpo .titulo {
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+    background-image: url(../img/fondonba.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Anton', sans-serif;
+    grid-area: titulo; }
+  .cuerpo .textopri {
+    font-size: 28px;
+    text-align: center;
+    padding: 10px;
+    background-color: #990000;
+    border: 10px solid white; }
+  .cuerpo .vertodo {
+    color: white;
+    background-color: #125B50;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin: 5px 40px 5px 40px; }
+  .cuerpo .row {
+    display: flex;
+    justify-content: flex-start; }
+    .cuerpo .row .nombreyprecio {
+      font-size: 15px;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center; }
+      .cuerpo .row .nombreyprecio .boton {
+        padding: 3px;
+        background-color: #125B50;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        margin: 5px; }
 
-.categoryselec:hover {
-  transform: scale(1.5);
-  transition: all 2s; }
+.contacto {
+  color: white;
+  padding: 200px;
+  background-color: #000000;
+  text-align: center;
+  font-size: 20px;
+  border: 5px solid white; }
+  .contacto textarea {
+    resize: none;
+    max-height: 20px;
+    max-width: 220px; }
+  .contacto .enviarinfo {
+    font-size: 17px; }
+
+.nosotros {
+  color: white;
+  padding: 130px;
+  background-color: #000000;
+  border: 5px solid #ffffff;
+  text-align: center;
+  font-size: 20px; }
 
 .selec {
   padding: 50px;
@@ -42,111 +116,18 @@ ul {
     background-color: #990000;
     padding: 10px; }
     .selec .categoryselec .text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 100px;
-    font-weight: 200;
-    font-weight: bold;
-  }
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 100px;
+      font-weight: 200;
+      font-weight: bold; }
 
-span {
-  color: #FAF3E3;
-  margin: 5px; }
-
-header {
-  color: #ffffff;
-  background-color: #000000;
-  padding: 30px;
-  position: sticky;
-  z-index: 1;
-  grid-area: inicio; }
-  header .logotipo {
-    display: flex;
-    justify-content: center; }
-
-.titulo {
-  color: #ffffff;
-  text-align: center;
-  padding: 40px;
-  font-size: 20px;
-  background-image: url(../img/fondonba.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: 'Anton', sans-serif;
-  grid-area: titulo; }
-
-.cuerpo {
-  grid-area: cuerpo; }
-
-.contacto {
-  color: #FAF3E3;
-  padding: 200px;
-  background-color: #000000;
-  border: 5px solid #ffffff;
-  text-align: center;
-  font-size: 20px; }
-  .contacto textarea {
-    resize: none;
-    max-height: 20px;
-    max-width: 220px; }
-  .contacto .enviarinfo {
-    font-size: 17px; }
-
-section {
-  background-color: #000000;
-  padding: 5px;
-  margin: 2%; }
-
-h3 {
-  color: #ffffff; }
-
-.textopri {
-  font-size: 28px;
-  text-align: center;
-  padding: 10px;
-  background-color: #990000;
-  border: 10px solid white; }
-
-.vertodo {
-  color: white;
-  background-color: #125B50;
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #000000;
-  border-radius: 10px;
-  margin: 5px 40px 5px 40px; }
-
-p {
-  color: #FAF3E3;
-  margin: 10px;
-  font-size: 15px; }
-
-.nosotros {
-  color: #FAF3E3;
-  padding: 130px;
-  background-color: #000000;
-  border: 5px solid #ffffff;
-  text-align: center;
-  font-size: 20px; }
-
-.row {
-  display: flex;
-  justify-content: flex-start; }
-  .row .nombreyprecio {
-    font-size: 15px;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center; }
-    .row .nombreyprecio .boton {
-      padding: 3px;
-      background-color: #125B50;
-      color: #ffffff;
-      text-decoration: none;
-      border-radius: 10px;
-      margin: 5px; }
+.categoryselec:hover {
+  transform: scale(1.5);
+  transition: all 2s; }
 
 footer {
   color: #FAF3E3;
@@ -156,14 +137,14 @@ footer {
   grid-area: pie; }
   footer .pietexto {
     font-size: 25px;
-    color: #FAF3E3;
+    color: white;
     background-color: #990000;
     padding: 20px;
     border: 5px solid #FAF3E3; }
   footer .pie {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center; }
+    display: grid;
+    justify-content: center; }
   footer .icon {
     display: grid;
     justify-content: center; }
@@ -171,7 +152,65 @@ footer {
     display: grid;
     justify-content: center; }
 
-    
-
-
-    
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "inicio inicio inicio" "titulo titulo titulo" "cuerpo cuerpo cuerpo" "pie pie pie"; }
+  @media (max-width: 992px) {
+    .contenedor .contenedor {
+      grid-template-areas: "inicio inicio inicio" "titulo titulo titulo" "cuerpo cuerpo cuerpo" "pie pie pie";
+      grid-template-columns: 1fr 1fr 1fr; }
+    .contenedor .inicio {
+      font-size: 20px; }
+    .contenedor .pie {
+      display: flex;
+      flex-direction: column; }
+    .contenedor .pietexto {
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center; }
+    .contenedor .menu {
+      display: flex;
+      flex-direction: column;
+      color: #FAF3E3;
+      background-color: #990000;
+      padding: 10px;
+      border: 10px solid #FAF3E3;
+      text-align: center; }
+    .contenedor .camisetas {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+    .contenedor .selec {
+      display: flex;
+      flex-direction: column; }
+    .contenedor .categoryselec {
+      margin: 10px; }
+    .contenedor .categoryselec:hover {
+      transform: scale(1.2);
+      transition: all 2s; }
+    .contenedor .nombreyprecio {
+      font-size: 13px; }
+    .contenedor span {
+      margin: 3px; } }
+  @media (max-width: 768px) {
+    .contenedor .contenedor {
+      grid-template-areas: "inicio inicio inicio" "titulo titulo titulo" "cuerpo cuerpo cuerpo" "pie pie pie";
+      grid-template-columns: 1fr 1fr 1fr; }
+    .contenedor .camisetas {
+      display: grid;
+      grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 576px) {
+    .contenedor .contenedor {
+      grid-template-areas: "inicio" "titulo" "cuerpo" "pie";
+      grid-template-columns: 1fr; }
+    .contenedor .camisetas {
+      display: grid;
+      grid-template-columns: 1fr; }
+    .contenedor .titulo {
+      font-size: 10px; }
+    .contenedor .boton {
+      padding: auto;
+      font-size: px; } }

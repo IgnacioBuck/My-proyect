@@ -2,7 +2,6 @@ header{
     color: $fuente-principal;
     background-color: $color-fondo2;
     padding: 30px;
-    z-index: 1;
     grid-area: inicio;
     .logotipo{
         display: flex;
@@ -12,10 +11,6 @@ header{
         list-style: none;
         li{
             font-size: 25px;
-            a{
-                text-decoration: none;
-                color: $fuente-principal;
-            }
         }
     }
 }
