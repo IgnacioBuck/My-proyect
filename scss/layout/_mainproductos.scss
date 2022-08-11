@@ -1,3 +1,6 @@
+ul{
+    list-style: none;
+}
 .selec{
     padding: 50px;
     margin: 5px;
@@ -26,7 +29,58 @@
         }
     }
 }
+.vertodo{
+    color: $fuente-principal;
+    background-color: #125B50;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin: 5px 40px 5px 40px;
+} 
+.titulo{
+    color: $fuente-principal;
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+    background-image: url(../img/fondonba.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Anton', sans-serif;
+    grid-area: titulo;
+}
+.textopri{
+    font-size: 28px;
+    text-align: center;
+    padding: 10px;
+    background-color: $color-fondo;
+    border: 10px solid white;
+}
 .categoryselec:hover{
     transform: scale(1.5);
     transition: all 2s;
+}
+section{
+    background-color: #000000;
+    padding: 5px;
+    margin: 2%;
+}
+.row{
+    display: flex;
+    justify-content: flex-start;
+    .nombreyprecio{
+        font-size: 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        .boton{
+            padding: 3px; 
+            background-color: $botones; 
+            color: $fuente-principal; 
+            text-decoration: none;
+            border-radius: 10px;
+            margin: 5px;
+        }
+    }
+    
 }
