@@ -1,36 +1,11 @@
-body{
-    background-image: url(../img/fondositioweb.jpg);
-    background-size: cover;
-}
-.contenedor{
-    display: grid;
-    grid-template-columns:1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "inicio inicio inicio"
-    "titulo titulo titulo"
-    "cuerpo cuerpo cuerpo"
-    "pie pie pie"
-    ;
-}
-span{
-    color: #FAF3E3;
-    margin: 5px;
-}
-@import "./layout/mainproductos";
-@import "./layout/mainnosotros";
-@import "./layout/maincontacto";
+@import "./layout/body";
 @import "./layout/header";
-@import"./layout/reset";
+@import "./layout/reset";
 @import "./layout/main";
+@import "./layout/maincontacto";
+@import "./layout/mainnosotros";
+@import "./layout/mainproductos";
 @import "./utilities/mixins";
 @import "./layout/footer";
-
-p{
-    color: #FAF3E3;
-    margin: 10px;
-    font-size: 15px;
-}
-
 
 

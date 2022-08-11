@@ -1,0 +1,24 @@
+footer{
+    color: #FAF3E3;
+    background-color: $color-fondo2;
+    font-size: 25px;
+    text-decoration: none;
+    grid-area: pie;
+    .pietexto{
+        font-size: 25px;
+        color: $fuente-principal;
+        background-color: $color-fondo;
+        padding: 20px;
+        border: 5px solid #FAF3E3;
+    }
+    .pie{
+        grid-template-columns: 1fr 1fr 1fr;
+        @include posicion;
+    }
+    .icon{
+        @include posicion;
+    }
+    .menufooter{
+        @include posicion;
+    }
+}
