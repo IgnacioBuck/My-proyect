@@ -9,13 +9,17 @@ body {
   body p {
     color: white;
     margin: 10px;
-    font-size: 15px; }
+    font-size: 25px;
+    font-weight: 500; }
   body span {
     color: white;
     margin: 5px; }
   body a {
     text-decoration: none;
     color: white; }
+  body h1 {
+    font-size: 100px;
+    font-weight: 900; }
 
 header {
   color: white;
@@ -39,10 +43,12 @@ header {
   .cuerpo h3 {
     color: white; }
   .cuerpo .titulo {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
     color: white;
     text-align: center;
-    padding: 40px;
-    font-size: 20px;
     background-image: url(../img/fondonba.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,12 +62,10 @@ header {
     border: 10px solid white; }
   .cuerpo .vertodo {
     color: white;
-    background-color: #125B50;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #000000;
-    border-radius: 10px;
-    margin: 5px 40px 5px 40px; }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
   .cuerpo .row {
     display: flex;
     justify-content: flex-start; }
@@ -71,7 +75,7 @@ header {
       grid-template-columns: 1fr;
       justify-items: center; }
       .cuerpo .row .nombreyprecio .boton {
-        padding: 3px;
+        padding: 10px;
         background-color: #125B50;
         color: white;
         text-decoration: none;
@@ -91,17 +95,33 @@ header {
     max-width: 220px; }
   .contacto .enviarinfo {
     font-size: 17px; }
+  .contacto .textcontacto {
+    font-size: 40px;
+    border: 10px solid #FAF3E3;
+    padding: 10px;
+    background-color: #990000; }
 
 .nosotros {
   color: white;
-  padding: 130px;
+  padding: 200px;
   background-color: #000000;
   border: 5px solid #ffffff;
   text-align: center;
   font-size: 20px; }
+  .nosotros .textonosotros {
+    font-size: 60px; }
 
 ul {
   list-style: none; }
+
+.cadauno {
+  font-size: 30px;
+  font-weight: 800; }
+
+.secdentro {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .selec {
   padding: 50px;
@@ -128,25 +148,37 @@ ul {
       font-weight: 200;
       font-weight: bold; }
 
-.vertodo {
-  color: white;
-  background-color: #125B50;
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #000000;
-  border-radius: 10px;
-  margin: 5px 40px 5px 40px; }
-
 .titulo {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: center;
   color: white;
   text-align: center;
-  padding: 40px;
-  font-size: 20px;
   background-image: url(../img/fondonba.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Anton', sans-serif;
   grid-area: titulo; }
+
+.vertodo {
+  color: white;
+  text-align: center;
+  margin: 5px 40px 5px 40px; }
+  .vertodo .vertodoboton {
+    background-color: #125B50;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 10px; }
+
+.secdentroelegir {
+  background-color: #000000;
+  font-family: 'Anton', sans-serif;
+  grid-area: titulo; }
+
+.categoria {
+  text-align: center;
+  color: #FAF3E3; }
 
 .textopri {
   font-size: 28px;
@@ -171,9 +203,10 @@ section {
     font-size: 15px;
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center; }
+    justify-items: center;
+    padding: 30px; }
     .row .nombreyprecio .boton {
-      padding: 3px;
+      padding: 10px;
       background-color: #125B50;
       color: white;
       text-decoration: none;
@@ -204,6 +237,8 @@ footer {
     justify-content: center; }
   footer p {
     text-align: center; }
+  footer .iconos {
+    padding: 15px; }
 
 .contenedor {
   display: grid;
@@ -247,14 +282,27 @@ footer {
     .contenedor .nombreyprecio {
       font-size: 13px; }
     .contenedor span {
-      margin: 3px; } }
+      margin: 3px; }
+    .contenedor .titulo {
+      height: 450px; }
+    .contenedor h1 {
+      font-size: 60px; } }
   @media (max-width: 768px) {
     .contenedor .contenedor {
       grid-template-areas: "inicio inicio inicio" "titulo titulo titulo" "cuerpo cuerpo cuerpo" "pie pie pie";
       grid-template-columns: 1fr 1fr 1fr; }
     .contenedor .camisetas {
       display: grid;
-      grid-template-columns: 1fr 1fr; } }
+      grid-template-columns: 1fr 1fr; }
+    .contenedor .titulo {
+      display: flex;
+      flex-direction: column;
+      height: 200px;
+      width: auto; }
+    .contenedor h1 {
+      font-size: 50px; }
+    .contenedor p {
+      font-size: 15px; } }
   @media (max-width: 576px) {
     .contenedor .contenedor {
       grid-template-areas: "inicio" "titulo" "cuerpo" "pie";
@@ -262,8 +310,6 @@ footer {
     .contenedor .camisetas {
       display: grid;
       grid-template-columns: 1fr; }
-    .contenedor .titulo {
-      font-size: 10px; }
     .contenedor .boton {
       padding: auto;
       font-size: px; } }

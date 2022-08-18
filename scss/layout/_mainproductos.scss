@@ -1,6 +1,15 @@
 ul{
     list-style: none;
 }
+.cadauno{
+    font-size: 30px;
+    font-weight: 800;
+}
+.secdentro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .selec{
     padding: 50px;
     margin: 5px;
@@ -29,25 +38,38 @@ ul{
         }
     }
 }
-.vertodo{
-    color: $fuente-principal;
-    background-color: #125B50;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #000000;
-    border-radius: 10px;
-    margin: 5px 40px 5px 40px;
-} 
 .titulo{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
     color: $fuente-principal;
     text-align: center;
-    padding: 40px;
-    font-size: 20px;
     background-image: url(../img/fondonba.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Anton', sans-serif;
     grid-area: titulo;
+}
+.vertodo{
+    color: $fuente-principal;
+    text-align: center;
+    margin: 5px 40px 5px 40px;
+    .vertodoboton{
+        background-color: #125B50;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        padding: 10px;
+    }
+}
+.secdentroelegir{
+    background-color: #000000;
+    font-family: 'Anton', sans-serif;
+    grid-area: titulo;
+}
+.categoria{
+    text-align: center;
+    color: #FAF3E3;
 }
 .textopri{
     font-size: 28px;
@@ -73,8 +95,9 @@ section{
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
+        padding: 30px;
         .boton{
-            padding: 3px; 
+            padding: 10px;
             background-color: $botones; 
             color: $fuente-principal; 
             text-decoration: none;

@@ -1,8 +1,11 @@
 .nosotros{
     color: $fuente-principal;
-    padding: 130px;
+    padding: 200px;
     background-color: $color-fondo2;
     border: 5px solid #ffffff;
     text-align: center;
     font-size: 20px;
+    .textonosotros{
+        font-size: 60px;
+    }
 }

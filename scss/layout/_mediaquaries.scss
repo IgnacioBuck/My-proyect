@@ -61,7 +61,12 @@
   span{
     margin: 3px;
   }
-
+  .titulo{
+    height: 450px;
+  }
+  h1{
+    font-size: 60px
+  }
 }
 @media(max-width:768px) {
   .contenedor{
@@ -76,6 +81,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .titulo{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: auto;
+  }
+  h1{
+    font-size: 50px;
+   }
+   p{
+     font-size: 15px;
+   }
 }
 @media(max-width:576px){
   .contenedor{
@@ -90,9 +107,8 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  .titulo{
-   font-size: 10px;
-  }
+  
+  
   .boton{
     padding: auto;
     font-size: px;

@@ -11,10 +11,12 @@
         color: $fuente-principal;
     }
     .titulo{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        justify-content: center;
         color: $fuente-principal;
         text-align: center;
-        padding: 40px;
-        font-size: 20px;
         background-image: url(../img/fondonba.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -30,12 +32,11 @@
     }
     .vertodo{
         color: $fuente-principal;
-        background-color: #125B50;
-        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
-        border: 1px solid #000000;
-        border-radius: 10px;
-        margin: 5px 40px 5px 40px;
+        
     }    
     
     .row{
@@ -47,7 +48,7 @@
             grid-template-columns: 1fr;
             justify-items: center;
             .boton{
-                padding: 3px; 
+                padding: 10px; 
                 background-color: $botones; 
                 color: $fuente-principal; 
                 text-decoration: none;

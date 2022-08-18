@@ -55,55 +55,77 @@
 
         <main>
             <div class="cuerpo">
+                
                 <div class="contacto">
-                    <form>
-                        <label for="nombre">Ingresar nombre y apellido</label>
-                        <input type="text"name="nombre" />
-                        <br>
-                        <label for="mail">Ingresar mail</label>
-                        <input type="text" name="mail" /> 
-                        <br>
-                        <label for="telefono">Ingresar telefono (opcional)</label>
-                        <input type="number" name="telefono">
-                        <br>
-                        <label for="mensaje">Mensaje</label>
-                        <textarea type="text" name="mensaje" id="" cols="30" rows="10"></textarea>
-                        <br>
-                        <input class="enviarinfo" type="submit" value="Enviar información"/>
-                    </form>
+                    <p class="textcontacto">Completa los datos para poder contactarte</p>
+                    <br>
+                    <br>
+                    <br>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Nombre</label>
+                          <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4" class="form-label">Apellido</label>
+                          <input type="text" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress" class="form-label">Email</label>
+                          <input type="text" class="form-control" id="inputAddress">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress2" class="form-label">Telefono (Opcional)</label>
+                          <input type="number" class="form-control" id="inputAddress2">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Mensaje</label>
+                            <input type="text" class="form-control" id="inputAddress2">
+                          </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                      </form>
                 </div>
             </div>
         </main>
         <footer>
-            <div class="pie">              
-                <ul>
-                    <p class="pietexto">Redes sociales</p>
+            <div class="pie">
+                <div class="redes">
+                    <p class="pietexto">
+                        Redes sociales
+                    </p>
                     <div class="icon">
-                        <img src="../img/icons8-instagram-48.png" alt="instagram">
-                        <li><a href="https://www.instagram.com/americanshop__ok/">Instagram</a></li>
-                        <img src="../img/icons8-facebook-nuevo-48.png" alt="facebook">
-                        <li><a href="https://www.facebook.com/profile.php?id=100082478267473">Facebook</a></li>
+                        <a class="iconos" href="https://www.instagram.com/americanshop__ok/">
+                            <img src="../img/icons8-instagram-48.png" alt="">
+                        </a>
+                        <a class="iconos" href="https://www.facebook.com/profile.php?id=100082478267473">
+                            <img src="../img/icons8-facebook-nuevo-48.png" alt="">
+                        </a>
                     </div>
-                </ul>
-                <ul>
-                    <p class="pietexto">Contactanos</p>
+                </div>
+                <div class="footercontacto">
+                    <p class="pietexto">
+                        Contacto
+                    </p>
                     <div class="icon">
-                        <img src="../img/icons8-whatsapp-48.png" alt="whatsapp">
-                        <li><a href="whatsapp://send?text=Hola AmericanShop, quiero informaciòn&phone=+54 9 11 6360 5584 &abid=++54 9 11 6360 5584">Whatsapp</a></li>
-                        <img src="../img/icons8-gmail-48.png" alt="Gmail">
-                        <li><a href="mailto:americanshopok@gmail.com">Gmail</a></li>
+                        <a class="iconos" href="whatsapp://send?text=Hola AmericanShop, quiero informaciòn&phone=+54 9 11 6360 5584 &abid=++54 9 11 6360 5584">
+                            <img src="../img/icons8-whatsapp-48.png" alt="">
+                        </a>
+                        <a class="iconos" href="mailto:americanshopok@gmail.com">
+                            <img src="../img/icons8-gmail-48.png" alt="">
+                        </a>
                     </div>
-                </ul>
-                
-                <nav>
+                </div>
+                <div class="navegacion">
                     <p class="pietexto">Navegación</p>
-                    <ul class="menufooter">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./productos.html">Productos</a></li>
-                        <li><a href="./nosotros.html">Nosotros</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./section/productos.html">Productos</a></li>
+                        <li><a href="./section/nosotros.html">Nosotros</a></li>
+                        <li><a href="./section/contacto.html">Contacto</a></li>
                     </ul>
-                </nav>
+                </div>
             </div>
         </footer>
     </div>
