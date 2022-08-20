@@ -107,8 +107,15 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  
-  
+  .titulo{
+    height: 100px;
+  }
+  h1{
+    font-size: 35px;
+   }
+   p{
+     font-size: 12px;
+   }
   .boton{
     padding: auto;
     font-size: px;

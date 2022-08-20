@@ -159,7 +159,8 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Anton', sans-serif;
-  grid-area: titulo; }
+  grid-area: titulo;
+  width: auto; }
 
 .vertodo {
   color: white;
@@ -310,6 +311,12 @@ footer {
     .contenedor .camisetas {
       display: grid;
       grid-template-columns: 1fr; }
+    .contenedor .titulo {
+      height: 100px; }
+    .contenedor h1 {
+      font-size: 35px; }
+    .contenedor p {
+      font-size: 12px; }
     .contenedor .boton {
       padding: auto;
       font-size: px; } }
