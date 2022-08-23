@@ -35,6 +35,9 @@ header {
       font-size: 25px; }
   header .carrito {
     padding: 15px; }
+  header .logotipo {
+    padding: 5px;
+    margin: 10px; }
 
 .cuerpo {
   grid-area: cuerpo; }
