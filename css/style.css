@@ -33,6 +33,8 @@ header {
     list-style: none; }
     header ul li {
       font-size: 25px; }
+  header .carrito {
+    padding: 15px; }
 
 .cuerpo {
   grid-area: cuerpo; }
@@ -179,7 +181,12 @@ ul {
 
 .categoria {
   text-align: center;
-  color: #FAF3E3; }
+  color: white;
+  padding: 10px;
+  background-color: #990000;
+  border: 10px solid white;
+  font-size: 60px;
+  margin: 0px 680px 0px 680px; }
 
 .textopri {
   font-size: 28px;
@@ -250,6 +257,12 @@ footer {
     .contenedor .contenedor {
       grid-template-areas: "inicio inicio inicio" "titulo titulo titulo" "cuerpo cuerpo cuerpo" "pie pie pie";
       grid-template-columns: 1fr 1fr 1fr; }
+    .contenedor .selec {
+      display: flex;
+      flex-direction: column; }
+    .contenedor .imagenelegir {
+      max-width: 100%;
+      width: 175px; }
     .contenedor .inicio {
       font-size: 20px; }
     .contenedor .pie {
@@ -278,14 +291,15 @@ footer {
     .contenedor .categoryselec {
       margin: 10px; }
     .contenedor .categoryselec:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
       transition: all 2s; }
     .contenedor .nombreyprecio {
       font-size: 13px; }
     .contenedor span {
       margin: 3px; }
     .contenedor .titulo {
-      height: 450px; }
+      max-height: 100%;
+      height: 976px; }
     .contenedor h1 {
       font-size: 60px; } }
   @media (max-width: 768px) {
@@ -295,11 +309,6 @@ footer {
     .contenedor .camisetas {
       display: grid;
       grid-template-columns: 1fr 1fr; }
-    .contenedor .titulo {
-      display: flex;
-      flex-direction: column;
-      height: 200px;
-      width: auto; }
     .contenedor h1 {
       font-size: 50px; }
     .contenedor p {
@@ -311,8 +320,6 @@ footer {
     .contenedor .camisetas {
       display: grid;
       grid-template-columns: 1fr; }
-    .contenedor .titulo {
-      height: 100px; }
     .contenedor h1 {
       font-size: 35px; }
     .contenedor p {

@@ -17,6 +17,14 @@
     "pie pie pie";
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .selec{
+    display: flex;
+    flex-direction: column;
+  }
+  .imagenelegir{
+    max-width: 100%;
+    width: 175px;
+  }
   .inicio{
     font-size: 20px;
   }
@@ -52,7 +60,7 @@
     margin: 10px;
   }
   .categoryselec:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: all 2s;
   }
   .nombreyprecio{
@@ -62,7 +70,8 @@
     margin: 3px;
   }
   .titulo{
-    height: 450px;
+    max-height: 100%;
+    height: 976px;
   }
   h1{
     font-size: 60px
@@ -81,12 +90,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .titulo{
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    width: auto;
-  }
+
   h1{
     font-size: 50px;
    }
@@ -107,9 +111,7 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  .titulo{
-    height: 100px;
-  }
+
   h1{
     font-size: 35px;
    }
